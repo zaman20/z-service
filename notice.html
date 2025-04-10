@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .notice-header {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            padding: 5rem 0;
+            margin-top: 56px;
+        }
+        .timeline {
+            position: relative;
+            padding: 4rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: #0d6efd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .timeline-item {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #0d6efd;
+            border: 2px solid #fff;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 25px;
+        }
+        .timeline-content {
+            position: relative;
+            width: calc(50% - 30px);
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        .timeline-item:nth-child(odd) .timeline-content {
+            float: left;
+        }
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+        }
+        .timeline-date {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #0d6efd;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .timeline-title {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        .timeline-text {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        .timeline-item::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 31px;
+            }
+            .timeline-item::before {
+                left: 31px;
+                transform: translateX(-50%);
+            }
+            .timeline-content {
+                width: calc(100% - 90px);
+                float: right !important;
+            }
+            .timeline-item:nth-child(odd) .timeline-content {
+                float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="notice.html">Notice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notice Header -->
+    <header class="notice-header text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Notices & Updates</h1>
+            <p class="lead">Stay informed with our latest announcements and updates</p>
+        </div>
+    </header>
+
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <!-- Notice 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">March 15, 2024</span>
+                    <h3 class="timeline-title">New Service Launch</h3>
+                    <p class="timeline-text">We are excited to announce the launch of our new cloud computing service. Join us for the virtual launch event next week.</p>
+                </div>
+            </div>
+
+            <!-- Notice 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">March 10, 2024</span>
+                    <h3 class="timeline-title">Office Closure Notice</h3>
+                    <p class="timeline-text">Our office will be closed for maintenance on March 20, 2024. All services will continue to operate normally.</p>
+                </div>
+            </div>
+
+            <!-- Notice 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">March 5, 2024</span>
+                    <h3 class="timeline-title">System Upgrade</h3>
+                    <p class="timeline-text">We will be performing a system upgrade on March 25, 2024. Some services may experience temporary interruptions.</p>
+                </div>
+            </div>
+
+            <!-- Notice 4 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">March 1, 2024</span>
+                    <h3 class="timeline-title">New Team Members</h3>
+                    <p class="timeline-text">Please join us in welcoming our new team members who will be joining the development department.</p>
+                </div>
+            </div>
+
+            <!-- Notice 5 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">February 25, 2024</span>
+                    <h3 class="timeline-title">Client Meeting</h3>
+                    <p class="timeline-text">Important client meeting scheduled for March 30, 2024. All team leads are requested to attend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Keeping you informed and updated.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="notice.html" class="text-white">Notices</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">© 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

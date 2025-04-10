@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP - Community Action Program</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notice.html">Notice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="https://images.unsplash.com/photo-1559660499-91b5973d3f1f?auto=format&fit=crop&q=80" class="d-block w-100" alt="Community Support">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Making Communities Stronger</h1>
+                        <p class="lead">We are dedicated to empowering communities through innovative programs.</p>
+                        <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1526958097901-5e6d742d3371?auto=format&fit=crop&q=80" class="d-block w-100" alt="Community Events">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Building Together</h1>
+                        <p class="lead">Creating sustainable solutions for our community's future.</p>
+                        <a href="#services" class="btn btn-primary btn-lg">Our Services</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80" class="d-block w-100" alt="Community Growth">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">Growing Together</h1>
+                        <p class="lead">Fostering growth and development in our communities.</p>
+                        <a href="#contact" class="btn btn-primary btn-lg">Join Us</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Chairman's Message Section -->
+    <section id="chairman" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="pe-lg-5">
+                        <h3 class="h2 fw-bold mb-4">Message from Our Chairman</h3>
+                        <p class="lead mb-4">"As the Chairman of CAP, I am deeply committed to our mission of fostering positive change and sustainable development in our communities. Our journey has been marked by countless stories of transformation and growth."</p>
+                        <p class="mb-4">"Through our various initiatives and programs, we have witnessed the remarkable resilience and potential within our communities. Together, we are building a future where every individual has the opportunity to thrive and contribute to society's progress."</p>
+                        <div class="d-flex align-items-center">
+                            <h4 class="h5 mb-0 me-3">Dr. Rahman Ahmed</h4>
+                            <p class="text-muted mb-0">Chairman, CAP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80" class="img-fluid rounded shadow" alt="Chairman's Portrait">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-6 fw-bold mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                            <h3 class="h5 mb-3">Education Programs</h3>
+                            <p>Providing quality education and skill development opportunities for community members.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-hand-holding-heart fa-3x text-primary mb-3"></i>
+                            <h3 class="h5 mb-3">Community Support</h3>
+                            <p>Offering assistance and resources to help community members thrive and succeed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-seedling fa-3x text-primary mb-3"></i>
+                            <h3 class="h5 mb-3">Sustainable Development</h3>
+                            <p>Implementing programs that promote long-term community growth and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="py-5" style="background: linear-gradient(135deg, #007bff, #00ff9d);">
+        <div class="container">
+            <div class="row g-4 text-center text-white">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                        <h2 class="counter fw-bold" data-target="10">0</h2>
+                        <p class="h5">Instructors</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-book fa-3x mb-3"></i>
+                        <h2 class="counter fw-bold" data-target="330">0</h2>
+                        <p class="h5">Courses</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-user-graduate fa-3x mb-3"></i>
+                        <h2 class="counter fw-bold" data-target="500">0</h2>
+                        <p class="h5">Students</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <i class="fas fa-award fa-3x mb-3"></i>
+                        <h2 class="counter fw-bold" data-target="20">0</h2>
+                        <p class="h5">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold mb-3">Our Team</h2>
+                    <p class="lead text-muted">Meet the dedicated professionals who make our mission possible</p>
+                </div>
+            </div>
+            <div id="teamCarousel" class="carousel slide team-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-card-img">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80" alt="Team Member 1">
+                                    </div>
+                                    <div class="team-card-body">
+                                        <h5>John Smith</h5>
+                                        <p>Chief Executive Officer</p>
+                                        <div class="team-social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-card-img">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80" alt="Team Member 2">
+                                    </div>
+                                    <div class="team-card-body">
+                                        <h5>Sarah Johnson</h5>
+                                        <p>Operations Director</p>
+                                        <div class="team-social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-card-img">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80" alt="Team Member 3">
+                                    </div>
+                                    <div class="team-card-body">
+                                        <h5>Michael Chen</h5>
+                                        <p>Technical Lead</p>
+                                        <div class="team-social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-card-img">
+                                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80" alt="Team Member 4">
+                                    </div>
+                                    <div class="team-card-body">
+                                        <h5>Emily Davis</h5>
+                                        <p>Community Manager</p>
+                                        <div class="team-social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-card-img">
+                                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80" alt="Team Member 5">
+                                    </div>
+                                    <div class="team-card-body">
+                                        <h5>David Wilson</h5>
+                                        <p>Program Director</p>
+                                        <div class="team-social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-card">
+                                    <div class="team-card-img">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80" alt="Team Member 6">
+                                    </div>
+                                    <div class="team-card-body">
+                                        <h5>Lisa Thompson</h5>
+                                        <p>Finance Manager</p>
+                                        <div class="team-social-links">
+                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fas fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5" style="background: linear-gradient(135deg, #6a11cb, #2575fc);">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold text-white mb-3">What People Say</h2>
+                    <p class="lead text-white-50">Hear from our community members about their experiences</p>
+                </div>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card bg-white p-4 rounded-4 shadow">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80" class="rounded-circle" width="60" height="60" alt="Sarah Wilson">
+                                        <div class="ms-3">
+                                            <h5 class="mb-1">Sarah Wilson</h5>
+                                            <p class="text-muted mb-0">Community Member</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="lead mb-0">"The programs offered by CAP have made a significant impact in our community. The support and resources provided have helped many families, including mine, to achieve their goals and improve their quality of life."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-uppercase mb-4">About CAP</h5>
+                    <p>Community Action Program (CAP) is dedicated to empowering communities through innovative programs and sustainable development initiatives.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="team.html" class="text-white text-decoration-none">Team</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="notice.html" class="text-white text-decoration-none">Notice</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-location-dot me-2"></i> 123 Community Street, City, Country</li>
+                        <li class="mb-3"><i class="fas fa-phone me-2"></i> +1 234 567 8900</li>
+                        <li class="mb-3"><i class="fas fa-envelope me-2"></i> info@cap.org</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center py-3 mt-4" style="background: rgba(0, 0, 0, 0.2)">
+            <p class="mb-0">&copy; 2024 Community Action Program. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card bg-white p-4 rounded-4 shadow">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" class="rounded-circle" width="60" height="60" alt="Michael Brown">
+                                        <div class="ms-3">
+                                            <h5 class="mb-1">Michael Brown</h5>
+                                            <p class="text-muted mb-0">Program Participant</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="lead mb-0">"The dedication of the CAP team is truly remarkable. They go above and beyond to ensure that every individual receives the support they need. I'm grateful for their commitment to building stronger communities."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card bg-white p-4 rounded-4 shadow">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="rounded-circle" width="60" height="60" alt="Emily Rodriguez">
+                                        <div class="ms-3">
+                                            <h5 class="mb-1">Emily Rodriguez</h5>
+                                            <p class="text-muted mb-0">Local Business Owner</p>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="lead mb-0">"As a local business owner, I've seen firsthand how CAP's initiatives have transformed our neighborhood. Their programs have created opportunities for growth and collaboration within our community."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="bg-primary" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="bg-primary" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold mb-3">Our Gallery</h2>
+                    <p class="lead text-muted">Explore our community initiatives and success stories</p>
+                </div>
+            </div>
+            <div class="gallery-filters mb-5">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="programs">Programs</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18" alt="Community Event">
+                    <div class="gallery-overlay">
+                        <h4>Annual Community Fair</h4>
+                        <p>Bringing people together to celebrate our diversity</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="programs">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Education Program">
+                    <div class="gallery-overlay">
+                        <h4>Youth Education Initiative</h4>
+                        <p>Empowering the next generation</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a" alt="Community Project">
+                    <div class="gallery-overlay">
+                        <h4>Neighborhood Clean-up</h4>
+                        <p>Working together for a better environment</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1528605105345-5344ea20e269" alt="Workshop Event">
+                    <div class="gallery-overlay">
+                        <h4>Skills Workshop</h4>
+                        <p>Learning and growing together</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="programs">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" alt="Community Program">
+                    <div class="gallery-overlay">
+                        <h4>Senior Support Program</h4>
+                        <p>Caring for our elderly community members</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8" alt="Community Gathering">
+                    <div class="gallery-overlay">
+                        <h4>Community Garden Project</h4>
+                        <p>Growing sustainable futures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Lightbox Image">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-6 fw-bold mb-3">Get In Touch</h2>
+                    <p class="lead mb-3">Have questions about our programs? We're here to help!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 CAP. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchToggle = document.getElementById('searchToggle');
+            const searchDropdown = document.getElementById('searchDropdown');
+
+            searchToggle.addEventListener('click', function() {
+                searchDropdown.classList.toggle('show');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.search-container')) {
+                    searchDropdown.classList.remove('show');
+                }
+            });
+        });
+    </script>
+    <script>
+        // Smooth scrolling
+        $(document).ready(function() {
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+
+            // Counter animation
+            function startCounter() {
+                $('.counter').each(function() {
+                    var $this = $(this);
+                    var target = parseInt($this.attr('data-target'));
+                    
+                    $({ Counter: 0 }).animate({
+                        Counter: target
+                    }, {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.ceil(this.Counter));
+                        }
+                    });
+                });
+            }
+
+            // Start counter when statistics section comes into view
+            var statisticsSection = $('#statistics');
+            var counterStarted = false;
+
+            $(window).scroll(function() {
+                if (!counterStarted && $(window).scrollTop() + $(window).height() > statisticsSection.offset().top) {
+                    startCounter();
+                    counterStarted = true;
+                }
+            });
+        });
+    </script>
+    <script>
+        // Smooth scrolling and counter animation code...
+        
+        // Gallery functionality
+        $(document).ready(function() {
+            // Filter functionality
+            $('.filter-btn').click(function() {
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                const filter = $(this).data('filter');
+                
+                $('.gallery-item').each(function() {
+                    if (filter === 'all' || $(this).data('category') === filter) {
+                        $(this).fadeIn();
+                    } else {
+                        $(this).fadeOut();
+                    }
+                });
+            });
+            
+            // Lightbox functionality
+            $('.gallery-item').click(function() {
+                const imgSrc = $(this).find('img').attr('src');
+                const lightbox = $('.lightbox');
+                const lightboxImg = lightbox.find('img');
+                
+                lightboxImg.attr('src', imgSrc);
+                lightbox.addClass('active');
+            });
+            
+            $('.lightbox-close').click(function() {
+                $('.lightbox').removeClass('active');
+            });
+            
+            $(document).keydown(function(e) {
+                if (e.key === 'Escape') {
+                    $('.lightbox').removeClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
