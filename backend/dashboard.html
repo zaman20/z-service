@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP Admin - Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --sidebar-width: 250px;
+        }
+        body {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            width: var(--sidebar-width);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #2c3e50;
+            padding: 1rem;
+            color: white;
+            transition: all 0.3s;
+        }
+        .sidebar .nav-link {
+            color: rgba(255,255,255,0.8);
+            padding: 0.8rem 1rem;
+            margin: 0.2rem 0;
+            border-radius: 5px;
+        }
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            color: white;
+            background: rgba(255,255,255,0.1);
+        }
+        .sidebar .nav-link i {
+            width: 25px;
+        }
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 2rem;
+        }
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        .quick-action {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            height: 100%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        .activity-item {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="d-flex align-items-center mb-4 pb-3 border-bottom">
+            <i class="fas fa-user-shield fa-2x me-3"></i>
+            <h5 class="mb-0">CAP Admin</h5>
+        </div>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="dashboard.html">
+                <i class="fas fa-home"></i> Dashboard
+            </a>
+            <a class="nav-link" href="users.html">
+                <i class="fas fa-users"></i> Users
+            </a>
+            <a class="nav-link" href="services.html">
+                <i class="fas fa-cogs"></i> Services
+            </a>
+            <a class="nav-link" href="team.html">
+                <i class="fas fa-user-tie"></i> Team
+            </a>
+            <a class="nav-link" href="gallery.html">
+                <i class="fas fa-images"></i> Gallery
+            </a>
+            <a class="nav-link" href="notices.html">
+                <i class="fas fa-bell"></i> Notices
+            </a>
+            <a class="nav-link" href="settings.html">
+                <i class="fas fa-cog"></i> Settings
+            </a>
+            <a class="nav-link text-danger" href="login.html">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Dashboard</h2>
+            <div class="btn-group">
+                <button class="btn btn-outline-primary">
+                    <i class="fas fa-download me-2"></i>Export Report
+                </button>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus me-2"></i>New Entry
+                </button>
+            </div>
+        </div>
+
+        <!-- Statistics Cards -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="mb-0">1,234</h3>
+                            <p class="text-muted mb-0">Total Users</p>
+                        </div>
+                        <i class="fas fa-users fa-2x text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="mb-0">56</h3>
+                            <p class="text-muted mb-0">Services</p>
+                        </div>
+                        <i class="fas fa-cogs fa-2x text-success"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="mb-0">89</h3>
+                            <p class="text-muted mb-0">Team Members</p>
+                        </div>
+                        <i class="fas fa-user-tie fa-2x text-info"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="mb-0">15</h3>
+                            <p class="text-muted mb-0">Active Notices</p>
+                        </div>
+                        <i class="fas fa-bell fa-2x text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions and Recent Activity -->
+        <div class="row g-4">
+            <div class="col-md-8">
+                <div class="quick-action">
+                    <h4 class="mb-4">Quick Actions</h4>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-light w-100 p-4 text-start">
+                                <i class="fas fa-plus-circle text-primary mb-2"></i>
+                                <h6 class="mb-0">Add New User</h6>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-light w-100 p-4 text-start">
+                                <i class="fas fa-edit text-success mb-2"></i>
+                                <h6 class="mb-0">Create Notice</h6>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="btn btn-light w-100 p-4 text-start">
+                                <i class="fas fa-image text-info mb-2"></i>
+                                <h6 class="mb-0">Upload Gallery</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="quick-action">
+                    <h4 class="mb-4">Recent Activity</h4>
+                    <div class="activity-item">
+                        <small class="text-muted">2 minutes ago</small>
+                        <p class="mb-0">New user registration</p>
+                    </div>
+                    <div class="activity-item">
+                        <small class="text-muted">1 hour ago</small>
+                        <p class="mb-0">Gallery updated</p>
+                    </div>
+                    <div class="activity-item">
+                        <small class="text-muted">3 hours ago</small>
+                        <p class="mb-0">Notice published</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
